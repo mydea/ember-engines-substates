@@ -1,0 +1,23 @@
+<h1>Host Application</h1>
+
+<ul>
+  <li>{{#link-to "index"}}Application root{{/link-to}}</li>
+  <li>{{#link-to "slow-in-host"}}Slow in host{{/link-to}}</li>
+  <li>{{#link-to "just-slow"}}Slow, no loading substate{{/link-to}}</li>
+</ul>
+
+<ul>
+  <li>{{#link-to "immediate"}}Immediate engine root{{/link-to}}</li>
+  <li>{{#link-to "immediate.slow-in-engine"}}Slow in immediate engine{{/link-to}}</li>
+  <li>{{#link-to "immediate.just-slow"}}Slow, no loading substate in immediate engine{{/link-to}}</li>
+</ul>
+
+<ul>
+  <li>{{#link-to "my-engine"}}Slow engine root{{/link-to}}</li>
+  <li>{{#link-to "my-engine.slow-in-engine"}}Slow in slow engine{{/link-to}}</li>
+  <li>{{#link-to "my-engine.just-slow"}}Slow, no loading substate in slow engine{{/link-to}}</li>
+</ul>
+
+<hr />
+
+{{outlet}}

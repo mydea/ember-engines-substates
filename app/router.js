@@ -7,6 +7,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.mount('my-engine');
+  this.mount('my-engine', { as: 'immediate' });
+  this.route('slow-in-host', function() {
+    // index route.
+  });
+
+  this.route('just-slow');
 });
 
 export default Router;
